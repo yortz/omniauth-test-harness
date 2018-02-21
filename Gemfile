@@ -1,15 +1,10 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
+ruby '2.4.1'
 
-gem 'rails', '~> 4.0.0'
+gem 'rails', '~> 5.1.5'
 
 gem 'omniauth'
-
-group :development do
-  gem 'sqlite3'
-end
-
-group :production do
-  gem 'pg'
-end
+gem 'omniauth-idplus', path: '/Users/cortinif/code/ELSEVIER/omniauth-idplus'
+gem 'pg'
+gem 'dotenv-rails'
