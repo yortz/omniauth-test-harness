@@ -4,13 +4,9 @@ A simple Ruby on Rails app to test OmniAuth strategies.
 
 https://github.com/PracticallyGreen/omniauth-test-harness
 
+This version of Omniauth Test Harness uses [Omniauth idplus strategy](https://github.com/yortz/omniauth-idplus)
+
 ## Usage
-
-Add the name of the omniauth strategy gem to be tested to this application's `Gemfile`:
-
-```ruby
-gem 'omniauth-new-strategy'
-```
 
 And then execute:
 
@@ -18,13 +14,9 @@ And then execute:
 $ bundle
 ```
 
-Configure the strategy in `config/initializers/omniauth.rb`:
-
-```ruby
-Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :new_strategy
-end
-```
+Configure the strategy settings in `config/initializers/omniauth.rb` with env
+variables. You can do so by creating a new .env file and specify the values for
+all configuration options.
 
 Start this test application:
 
